@@ -1,0 +1,18 @@
+port: 4222 # Listening port for client connection
+net: 127.0.0.1 # monitoring network address
+
+http: 0.0.0.0:8222
+
+
+jetstream: enabled
+
+jetstream: {
+    store_dir: data/jetstream
+    max_mem: 1G
+    max_file: 100G
+}
+
+authorization: {
+    user: bikash,
+    password: $2a$11$WjI6/oXXWeuuTpQQJFdTXOa/oYHUQ9goOH1i2TPaUV11hqj/aLJeC
+}

@@ -1,0 +1,23 @@
+# Cluster Seed Node
+server_name: node-a
+listen: 4222
+http: 8222
+
+jetstream: {
+    store_dir: data/jetstream-c1-a
+    max_mem: 1G
+    max_file: 100G
+}
+
+cluster: {
+  name: c1
+  listen: 127.0.0.1:42480
+  routes = [
+    nats-route://nodec1b:1111111111111111111111@127.0.0.1:62480
+    nats-route://nodec1c:1111111111111111111111@127.0.0.1:52480
+  ]
+}
+authorization: {
+    user: nodec1a,
+    password: $2a$11$WjI6/oXXWeuuTpQQJFdTXOa/oYHUQ9goOH1i2TPaUV11hqj/aLJeC
+}

@@ -1,0 +1,1 @@
+nats context save cluster1 --server nats://nodec1a:1111111111111111111111@localhost:4222,nats://nodec1b:1111111111111111111111@localhost:5222,nats://nodec1c:1111111111111111111111@localhost:6222 --description "Cluster With 3 nodes and user and password"

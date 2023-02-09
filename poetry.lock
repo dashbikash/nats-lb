@@ -1,0 +1,18 @@
+[[package]]
+name = "nats-py"
+version = "2.2.0"
+description = "NATS client for Python"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+nkeys = ["nkeys"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "a694e75ff90e2e4ec950613d3c74e69d07e10165f719f01b1cb025b5464ea1d3"
+
+[metadata.files]
+nats-py = []
